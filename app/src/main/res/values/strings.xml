@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RateMyPlate2</string>
+    <string name="upload">Upload</string>
+    <string name="Name">Name</string>
+    <string name="choose_image">Choose mImage</string>
+    <string name="Caption">Caption</string>
+    <string name="take_photo">Take photo</string>
+    <string name="todo">TODO</string>
+    <string name="plate_name_goes_here">Plate Name Goes Here</string>
+    <string name="caption_goes_here">Caption goes here</string>
+</resources>
