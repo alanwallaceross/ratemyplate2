@@ -58,21 +58,21 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.image.setImageBitmap(rotatedBm);
 
 //         user clicks on list in the list
-        holder.parentLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.d(TAG, "onClick: clicked on:" + plates.get(position).getName());
-
-                Toast.makeText(context, plates.get(position).getName(), Toast.LENGTH_SHORT).show();
-
-                //takes user to the item in the list they clicked on
-                Intent intent = new Intent(context, PlateActivity.class);
-                intent.putExtra("image", resizedBm);
-                intent.putExtra("image_name", plates.get(position).getName());
-                intent.putExtra("image_caption", plates.get(position).getCaption());
-                context.startActivity(intent);
-            }
-        });
+//        holder.parentLayout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Log.d(TAG, "onClick: clicked on:" + plates.get(position).getName());
+//
+//                Toast.makeText(context, plates.get(position).getName(), Toast.LENGTH_SHORT).show();
+//
+//                //takes user to the item in the list they clicked on
+//                Intent intent = new Intent(context, PlateActivity.class);
+//                intent.putExtra("image", resizedBm);
+//                intent.putExtra("image_name", plates.get(position).getName());
+//                intent.putExtra("image_caption", plates.get(position).getCaption());
+//                context.startActivity(intent);
+//            }
+//        });
 
         holder.parentLayout.setOnLongClickListener(new View.OnLongClickListener() {
             @Override

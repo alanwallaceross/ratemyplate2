@@ -32,11 +32,11 @@ public class PlateActivity extends AppCompatActivity {
             String imageName = getIntent().getStringExtra("image_name");
             String imageCaption = getIntent().getStringExtra("image_caption");
             Log.d("images", imageName + image);
-            setImage(image, imageName, imageCaption);
+            setScreen(image, imageName, imageCaption);
         }
     }
 
-    private void setImage(Bitmap bM, String imageName, String imageCaption) {
+    private void setScreen(Bitmap bM, String imageName, String imageCaption) {
         Log.d(TAG,"setImage: setting the image and to widgets");
 
         // sets the name view
